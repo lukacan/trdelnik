@@ -16,6 +16,8 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = "0.25.0"
-anchor-spl = "0.25.0"
+# TODO use official release once the version 0.25.0 is published with the newer solana (1.14.7)
+# local build commit fad05805d8b3931169f1ca66253be310ce66ed2e
+anchor-lang = { path = "../../../../dependencies/anchor/lang" }
+anchor-spl = { path = "../../../../dependencies/anchor/spl" }
 spl-token = { version = "3.1.1", features = ["no-entrypoint"] }

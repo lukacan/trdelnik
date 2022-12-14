@@ -181,6 +181,20 @@ pub fn parse_vote(
                 }),
             })
         }
+        // TODO parse the instruction and return the parsed JSON
+        VoteInstruction::CompactUpdateVoteState(_) => {
+            Ok(ParsedInstructionEnum {
+                instruction_type: "TODO!!".to_string(),
+                info: json!({}),
+            })
+        }
+        // TODO parse the instruction and return the parsed JSON
+        VoteInstruction::CompactUpdateVoteStateSwitch(_, _) => {
+            Ok(ParsedInstructionEnum {
+                instruction_type: "TODO!!".to_string(),
+                info: json!({}),
+            })
+        }
     }
 }
 

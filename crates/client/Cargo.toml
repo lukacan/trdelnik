@@ -16,13 +16,15 @@ pretty_assertions = "1.1.0"
 
 [dependencies]
 trdelnik-test = { path = "../test", version = "0.2.0" }
-solana-sdk = "~1.10.39"
-solana-cli-output = "~1.10.39"
-solana-transaction-status = "~1.10.39"
-solana-account-decoder = "~1.10.39"
-anchor-client = "0.25.0"
-spl-token = "^3.2.0"
-spl-associated-token-account = "^1.0.3"
+solana-sdk = "1.14.7"
+solana-cli-output = "1.14.7"
+solana-transaction-status = "1.14.7"
+solana-account-decoder = "1.14.7"
+# TODO use official release once the version 0.25.0 is published with the newer solana (1.14.7)
+# local build commit fad05805d8b3931169f1ca66253be310ce66ed2e
+anchor-client = { path = "../../dependencies/anchor/client" }
+spl-token = "3.5.0"
+spl-associated-token-account = "1.1.1"
 tokio = { version = "1.13.0", features = ["rt-multi-thread", "macros", "fs", "signal", "sync", "time", "io-util", "process"], default-features = false }
 rand = "0.7.3"
 serde_json = "1.0.72"

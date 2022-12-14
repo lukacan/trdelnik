@@ -112,6 +112,13 @@ pub fn parse_bpf_upgradeable_loader(
                 }),
             })
         }
+        // TODO parse the instruction and return the parsed JSON
+        UpgradeableLoaderInstruction::ExtendProgram { additional_bytes: _ } => {
+            Ok(ParsedInstructionEnum {
+                instruction_type: "TODO!!".to_string(),
+                info: json!({}),
+            })
+        }
     }
 }
 

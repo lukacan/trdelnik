@@ -265,6 +265,27 @@ pub fn parse_stake(
                 }),
             })
         }
+        // TODO parse the instruction and return the parsed JSON
+        StakeInstruction::GetMinimumDelegation => {
+            Ok(ParsedInstructionEnum {
+                instruction_type: "TODO!!".to_string(),
+                info: json!({}),
+            })
+        }
+        // TODO parse the instruction and return the parsed JSON
+        StakeInstruction::DeactivateDelinquent => {
+            Ok(ParsedInstructionEnum {
+                instruction_type: "TODO!!".to_string(),
+                info: json!({}),
+            })
+        }
+        // TODO parse the instruction and return the parsed JSON
+        StakeInstruction::Redelegate => {
+            Ok(ParsedInstructionEnum {
+                instruction_type: "TODO!!".to_string(),
+                info: json!({}),
+            })
+        }
     }
 }
 
