@@ -12,7 +12,7 @@ runs:
           ~/.cache/anchor/
           ~/.local/share/anchor/
         key: anchor-${{ runner.os }}-v0000-${{ env.ANCHOR_VERSION }}
-    - run: npm i -g @project-serum/anchor-cli@${{ env.ANCHOR_VERSION }} ts-mocha typescript
+    - run: npm i -g @coral-xyz/anchor-cli@${{ env.ANCHOR_VERSION }} ts-mocha typescript
       shell: bash
     # - run: cargo install --git https://github.com/project-serum/anchor avm --locked
     #   shell: bash
