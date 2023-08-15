@@ -14,11 +14,3 @@ runs:
         key: anchor-${{ runner.os }}-v0000-${{ env.ANCHOR_VERSION }}
     - run: npm i -g @coral-xyz/anchor-cli@${{ env.ANCHOR_VERSION }} ts-mocha typescript
       shell: bash
-    # - run: cargo install --git https://github.com/project-serum/anchor avm --locked
-    #   shell: bash
-    # - run: sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y pkg-config build-essential libudev-dev
-    #   shell: bash
-    # - run: avm install ${{ env.ANCHOR_VERSION }}
-    #   shell: bash
-    # - run: avm use ${{ env.ANCHOR_VERSION }}
-    #   shell: bash
